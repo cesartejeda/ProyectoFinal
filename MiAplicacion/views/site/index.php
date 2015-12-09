@@ -1,13 +1,13 @@
 <?php
 
 /* @var $this yii\web\View */
-
+/* Edicion Cesar, Titulos y encabezados */
 $this->title = 'My Yii Application';
 ?>
 <div class="site-index">
 
     <div class="jumbotron">
-    /* Cambio de Cesar, agregando titulos */
+    
         <h1>Bienvenido!</h1>
 
         <p class="lead">Administrador de Tareas</p>
