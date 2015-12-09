@@ -1,0 +1,62 @@
+SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0;
+SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
+SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='TRADITIONAL,ALLOW_INVALID_DATES';
+
+CREATE SCHEMA IF NOT EXISTS `bdproyecto` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci ;
+USE `bdproyecto` ;
+
+-- -----------------------------------------------------
+-- Table `bdproyecto`.`usuario`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `bdproyecto`.`usuario` (
+  `idusuario` INT NULL,
+  `nombre` VARCHAR(45) NULL,
+  `edad` VARCHAR(45) NULL,
+  `sexo` VARCHAR(45) NULL,
+  `apellido_pat` VARCHAR(45) NULL,
+  `apellido_mat` VARCHAR(45) NULL,
+  PRIMARY KEY (`idusuario`))
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `bdproyecto`.`tarea`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `bdproyecto`.`tarea` (
+  `idtarea` INT NOT NULL,
+  `nombre` VARCHAR(45) NULL,
+  `fecha_ini` DATE NULL,
+  `fecha_fin` DATE NULL,
+  `descripcion` VARCHAR(45) NULL,
+  `usuario_idusuario` INT NOT NULL,
+  PRIMARY KEY (`idtarea`),
+  INDEX `fk_tarea_usuario1_idx` (`usuario_idusuario` ASC),
+  CONSTRAINT `fk_tarea_usuario1`
+    FOREIGN KEY (`usuario_idusuario`)
+    REFERENCES `bdproyecto`.`usuario` (`idusuario`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `bdproyecto`.`tipo_tarea`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `bdproyecto`.`tipo_tarea` (
+  `idtipotarea` INT NULL,
+  `nombre` VARCHAR(45) NULL,
+  `descripcion` VARCHAR(45) NULL,
+  `tarea_idtarea` INT NOT NULL,
+  PRIMARY KEY (`idtipotarea`),
+  INDEX `fk_tipo_tarea_tarea_idx` (`tarea_idtarea` ASC),
+  CONSTRAINT `fk_tipo_tarea_tarea`
+    FOREIGN KEY (`tarea_idtarea`)
+    REFERENCES `bdproyecto`.`tarea` (`idtarea`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+
+
+SET SQL_MODE=@OLD_SQL_MODE;
+SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
+SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
