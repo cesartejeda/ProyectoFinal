@@ -11,8 +11,8 @@ $this->title = 'My Yii Application';
         <h1>Bienvenido!</h1>
 
         <p class="lead">Administrador de Tareas</p>
-
-        <p><a class="btn btn-lg btn-success" href="/tareas/index">Acceder</a></p>
+        <p class="lead">Contenido</p>
+        <p><a class="btn btn-lg btn-success" href="#">↓</a></p>
     </div>
 
     <div class="body-content">
