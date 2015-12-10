@@ -1,7 +1,7 @@
 <?php
 
 /* @var $this yii\web\View */
-/* Edicion Cesar, Titulos y encabezados */
+/* Edicion Cesar, Jonathan, Andres, Titulos, encabezados y contenido */
 $this->title = 'My Yii Application';
 ?>
 <div class="site-index">
@@ -11,6 +11,7 @@ $this->title = 'My Yii Application';
         <h1>Bienvenido!</h1>
 
         <p class="lead">Administrador de Tareas</p>
+         <p class="lead">El clima para Tepic es:</p>
         <p class="lead">Contenido</p>
         <p><a class="btn btn-lg btn-success" href="#">↓</a></p>
     </div>
