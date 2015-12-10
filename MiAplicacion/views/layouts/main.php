@@ -43,7 +43,7 @@ AppAsset::register($this);
             ['label' => 'Tipo Tarea', 'url' => ['/tipo-tarea/index']],
             ['label' => 'Contacto', 'url' => ['/site/contact']],
             Yii::$app->user->isGuest ?
-                ['label' => 'Login', 'url' => ['/site/login']] :
+                ['label' => 'Cuenta', 'url' => ['/site/login']] :
                 [
                     'label' => 'Logout (' . Yii::$app->user->identity->username . ')',
                     'url' => ['/site/logout'],
