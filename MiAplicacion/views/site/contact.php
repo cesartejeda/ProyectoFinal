@@ -34,7 +34,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <?php else: ?>
 
         <p>
-            Si tienes algun problema, puedes ponerte en contacto para solucionar tus dudas.
+            Aquí puedes ponerte en contacto para aclarar una duda o sugerencia.
         </p>
 
         <div class="row">
@@ -42,20 +42,20 @@ $this->params['breadcrumbs'][] = $this->title;
 
                 <?php $form = ActiveForm::begin(['id' => 'contact-form']); ?>
 
-                    <?= $form->field($model, 'nombre') ?>
+                    <?= $form->field($model, 'name') ?>
 
-                    <?= $form->field($model, 'Correo Electronico') ?>
+                    <?= $form->field($model, 'email') ?>
 
-                    <?= $form->field($model, 'Asunto') ?>
+                    <?= $form->field($model, 'subject') ?>
 
-                    <?= $form->field($model, 'Mensaje')->textArea(['rows' => 6]) ?>
+                    <?= $form->field($model, 'body')->textArea(['rows' => 6]) ?>
 
                     <?= $form->field($model, 'verifyCode')->widget(Captcha::className(), [
                         'template' => '<div class="row"><div class="col-lg-3">{image}</div><div class="col-lg-6">{input}</div></div>',
                     ]) ?>
 
                     <div class="form-group">
-                        <?= Html::submitButton('Enviar', ['class' => 'btn btn-primary', 'name' => 'contact-button']) ?>
+                        <?= Html::submitButton('Submit', ['class' => 'btn btn-primary', 'name' => 'contact-button']) ?>
                     </div>
 
                 <?php ActiveForm::end(); ?>
