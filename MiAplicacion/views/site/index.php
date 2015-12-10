@@ -12,6 +12,8 @@ $this->title = 'My Yii Application';
 
         <p class="lead">Administrador de Tareas</p>
          <p class="lead">El clima para Tepic es:</p>
+
+ <center><a href="http://www.accuweather.com/es/mx/tepic/234337/weather-forecast/234337" class="aw-widget-legal">
         <p class="lead">Contenido</p>
         <p><a class="btn btn-lg btn-success" href="#">↓</a></p>
     </div>
