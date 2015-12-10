@@ -19,9 +19,9 @@ $this->title = 'My Yii Application';
 
         <div class="row">
             <div class="col-lg-4">
-                <h2>Como utilizarlo</h2>
+                <h2>Tareas</h2>
 
-                <p>Para poder usarlo, dirigete al menu superior derecho y selecciona.</p>
+                <p>Podrás agregar tareas y almacenarlas.</p>
 
                 <p><a class="btn btn-default" href="http://www.yiiframework.com/doc/">Yii Documentation &raquo;</a></p>
             </div>
