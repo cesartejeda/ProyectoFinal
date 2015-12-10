@@ -14,8 +14,9 @@ $this->title = 'My Yii Application';
          <p class="lead">El clima para Tepic es:</p>
 
  <center><a href="http://www.accuweather.com/es/mx/tepic/234337/weather-forecast/234337" class="aw-widget-legal">
-        <p class="lead">Contenido</p>
+ </a><div id="awcc1449613146337" class="aw-widget-current"  data-locationkey="234337" data-unit="c" data-language="es" data-useip="false" data-uid="awcc1449613146337"></div><script type="text/javascript" src="http://oap.accuweather.com/launch.js"></script></center>
         <p><a class="btn btn-lg btn-success" href="#">↓ Nuestro contenido ↓</a></p>
+    </div>
     </div>
 
     <div class="body-content">
