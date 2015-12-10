@@ -15,7 +15,7 @@ $this->title = 'My Yii Application';
 
  <center><a href="http://www.accuweather.com/es/mx/tepic/234337/weather-forecast/234337" class="aw-widget-legal">
         <p class="lead">Contenido</p>
-        <p><a class="btn btn-lg btn-success" href="#">↓</a></p>
+        <p><a class="btn btn-lg btn-success" href="#">↓ Nuestro contenido ↓</a></p>
     </div>
 
     <div class="body-content">
