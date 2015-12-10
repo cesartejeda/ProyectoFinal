@@ -2,7 +2,7 @@
 
 /* @var $this yii\web\View */
 /* Edicion Cesar, Jonathan, Andres, Titulos, encabezados y contenido */
-$this->title = 'My Yii Application';
+$this->title = 'Proyecto';
 ?>
 <div class="site-index">
 
