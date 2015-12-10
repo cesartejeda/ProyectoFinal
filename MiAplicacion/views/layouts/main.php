@@ -36,10 +36,12 @@ AppAsset::register($this);
     echo Nav::widget([
         'options' => ['class' => 'navbar-nav navbar-right'],
         'items' => [
-            ['label' => 'Home', 'url' => ['/site/index']],
-            ['label' => 'About', 'url' => ['/site/about']],
-            ['label' => 'Ejemplo', 'url' => ['/tarea/index']],
-            ['label' => 'Contact', 'url' => ['/site/contact']],
+            ['label' => 'Pagina Principal', 'url' => ['/site/index']],
+            ['label' => 'Acerca de', 'url' => ['/site/about']],
+            ['label' => 'Tarea', 'url' => ['/tarea/index']],
+            ['label' => 'Usuario', 'url' => ['/usuario/index']],
+            ['label' => 'Tipo Tarea', 'url' => ['/tipo-tarea/index']],
+            ['label' => 'Contacto', 'url' => ['/site/contact']],
             Yii::$app->user->isGuest ?
                 ['label' => 'Login', 'url' => ['/site/login']] :
                 [
